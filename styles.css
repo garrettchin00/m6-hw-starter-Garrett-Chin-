@@ -1,0 +1,184 @@
+/* ---------- CSS Variables ---------- */
+:root{
+    /* Theme Colors */
+    --red: #fd0118;
+    --white: #fff;
+    --black: #020202;
+    --gray: #939393;
+
+    /* Other Colors */
+    --lt-gray: #f2f2f2;
+    --seal-brown: #530201;
+
+    /* Fonts */
+    --fonts: "Seymour One", "Roboto", serif;
+
+    /* Background */
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg width='70' height='70' viewBox='0 0 70 70' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23020202' fill-opacity='0.5' fill-rule='evenodd'%3E%3Cpath d='M0 0h35v35H0V0zm5 5h25v25H5V5zm5 5h15v15H10V10zm5 5h5v5h-5v-5zM40 5h25v25H40V5zm5 5h15v15H45V10zm5 5h5v5h-5v-5zM70 35H35v35h35V35zm-5 5H40v25h25V40zm-5 5H45v15h15V45zm-5 5h-5v5h5v-5zM30 40H5v25h25V40zm-5 5H10v15h15V45zm-5 5h-5v5h5v-5z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* ---------- Link Styles ---------- */
+a{
+    display: block;
+    text-align: center;
+}
+
+img{
+    width: 240px;
+    height: 135px;
+    position: absolute;
+    left: 0;
+}
+/* ---------- Body Styles ---------- */
+body{
+    box-sizing: border-box;
+    font-size: 1.1rem;
+    font-family: var(--fonts);
+    margin: 0;
+}
+
+/* Text Styles */
+p{
+    display: grid;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    font-size: 1rem;
+}
+
+/* ---------- Header Styles ---------- */
+header{
+    padding: 1rem;
+    width: 968px;
+    margin: 0 auto;
+    background-color: var(--white);
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+}
+
+/* ----- HEADING STYLES ----- */
+h1{
+    font-size: 3rem;
+    text-align: center;
+}
+
+h2{
+    font-size: 2.2rem;
+    text-align: left;
+}
+
+/* ---------- Nav Ul Styles --------- */
+nav ul{
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    gap: 1rem;
+    margin: 0 auto;
+    float: none;
+    justify-content: center;
+}
+
+/* ---------- Nav a Styles --------- */
+nav a{
+    text-decoration: none;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    color: var(--black);
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+/* ---------- Navigation a Hover Styles ---------- */
+nav a:hover{
+    border-color: var(--red);
+    color: var(--red);
+}
+
+/* ---------- Main Styles ---------- */
+main{
+    width: 1000px;
+    padding: 2rem 0;
+    margin-top: 0;
+    margin-left: auto;
+    margin-bottom: 8px;
+    margin-right: auto;
+    background-color: var(--red);
+}
+
+/* ---------- Main Section Styles ---------- */
+main > section{
+    padding-top: 2rem;
+    padding-bottom: 9rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* ---------- Main H2 Styles ---------- */
+main h2{
+    font-size: 1rem;
+    padding: 0;
+    width: fit-content;
+    margin: 0;
+    background-color: var(--red);
+    color: var(--black);
+}
+
+iframe{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    float: right;
+    top: -150px;
+    overflow: clip !important;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+
+/* ---------- Footer Styles ---------- */
+footer{
+    padding: 1rem;
+    width: 968px;
+    margin: 0 auto;
+    background-color: var(--white);
+    text-align: center;
+    padding-top: 2rem;
+}
+
+footer h2{
+    margin: 0 auto;
+    font-size: 1.35rem;
+    line-height: 1;
+    grid-column: 1/-1;
+}
+
+footer section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.5rem 1rem;
+    width: 520px;
+    text-align: center;
+    margin: 0 auto 1rem auto;
+}
+
+footer a{
+    padding: 0.5rem;
+    color: var(--dk-gray);
+    text-underline-offset: 4px;
+    text-decoration-color: var(--red);
+    text-decoration-thickness: 2px;
+}
+
+footer a:hover{
+    color: var(--red);
+}
+
+footer p{
+    margin: 0 auto;
+    font-size: 1rem;
+}
